@@ -18,8 +18,7 @@
 		font-family: "RidleyGrotesk-Light";
 	}
 
-	
-	#img_sec1, #div_beside_img_sec1, #sec1_h3, #span_below_sec1_h3, #btn_below_span_sec1, #elemleft_in_btn_below_span, #elemright_in_btn_below_span{
+	#img_sec1, #div_beside_img_sec1, #sec1_h3, #span_below_sec1_h3, #btn_below_span_sec1, #elemleft_in_btn_below_span, #elemright1_in_btn_below_span, #elemright2_in_btn_below_span, #connect_div_whole, #scroll_div, #connect_div_twtic, #connect_div_fbic, #connect_div_igic{
 		display: none;
 	}
 
@@ -466,3 +465,21 @@
 	#fp-nav li .active span, .fp-slidesNav .active span{
 		background: #cc9d03;
 	}
+	.btn-round{
+		background:#FEC712; border-radius:50%; width:50px; height:50px;
+	}
+	.icon_btn_round{
+		color: white;
+		padding-left: 17px;
+		padding-top: 17px;
+	}
+	#connect_div_whole{
+		position:relative; top:300px;
+	}
+	#connect_div{
+		height:100%; width:280px; display:inline-block; margin-left:160px;
+	}
+	#scroll_div{
+		position:relative; bottom:-300px;
+	}
+	

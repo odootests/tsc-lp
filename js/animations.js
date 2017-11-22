@@ -12,11 +12,26 @@ $(document).ready(function(){
             $("#btn_below_span_sec1").css({"display": "block"}).addClass(" fadeInRight");
         }, 800);
         setTimeout(function(){
+            $("#scroll_div").css({"display": "inline-block"}).addClass(" slideInUp");
+        }, 1000);
+        setTimeout(function(){
+            $("#connect_div_whole").css({"display": "inline-block"}).addClass(" slideInRight");
+        }, 1200);
+        setTimeout(function(){
             $("#elemleft_in_btn_below_span").css({"display": "inline"}).addClass(" zoomIn");
         }, 1500);
         setTimeout(function(){
-            $("#elemright_in_btn_below_span").css({"display": "inline"}).addClass(" zoomIn");
+            $("#elemright1_in_btn_below_span").css({"display": "inline"}).addClass(" zoomIn");
+            $("#connect_div_twtic").css({"display": "block"}).addClass(" zoomIn");
         }, 2000);
+        
+        setTimeout(function(){
+            $("#elemright2_in_btn_below_span").css({"display": "inline"}).addClass(" zoomIn");
+            $("#connect_div_fbic").css({"display": "block"}).addClass(" zoomIn");
+        }, 2300);
+        setTimeout(function(){
+            $("#connect_div_igic").css({"display": "block"}).addClass(" zoomIn");
+        }, 2600);
     }
     sec1_anims();
     // var doc_begin_position = $("#fullpage").position();
