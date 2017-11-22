@@ -19,12 +19,12 @@
 			 var console = { log: function() {} };
 		</script>
 	<![endif]-->
-
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
 	<script type="text/javascript" src="js/jquery.fullpage.js"></script>
 	<script src="https://use.fontawesome.com/45653cb24f.js"></script>
+	<script src="js/animations.js"></script>
 	<!-- <script>
 jQuery(".next").click(function() {
        jQuery('html,body').animate({ scrollTop:jQuery(this).parent().section().offset().top}, 'slow');
@@ -34,6 +34,7 @@ jQuery(".next").click(function() {
 
 <script type="text/javascript">
 	$(document).ready(function() {
+	
 		$('#fullpage').fullpage({
 			'verticalCentered': false,
 			'css3': true,
@@ -67,39 +68,46 @@ jQuery(".next").click(function() {
 				scrollTop: $("#section2").offset().top
 			}, 600);
 		});
-		$("#atag_sec2").click(function(){
-			$('html, body').animate({
-				scrollTop: $("#section3").offset().top
-			}, 600);
-		});
-
+		// $("#atag_sec2").click(function(){
+		// 	$('html, body').animate({
+		// 		scrollTop: $("#section3").offset().top
+		// 	}, 600);
+		// });
+		
 	});
 </script>
 
-
 </head>
 <body>
-
-
 	<div id="fullpage">
-
-
-		
 		<div class="section panel intro_smartClub" id="section1" data-section-name="intro_smartClub">
 			<div class="wrap">
-				<div class="cusTomImg" style="width:33%; height:100%; float:left;">
+				<div class="cusTomImg animated" id='img_sec1' style="width:33%; height:100%; float:left;">
 					<img src="imgs/phone-1.png" />
 				</div>
-				<div class="cusTomContent" style="width:54%; height:100%; float:left; margin-left:120px;">
+				<div class="cusTomContent animated" id='div_beside_img_sec1' style="width:54%; height:100%; float:left; margin-left:120px;">
 					<div class="empTYDib11" style="height:21%;"></div>
 					<div class="boxCustom" style="text-align: left;">
-						<h3 style="line-height: 28px; font-family: RidleyGrotesk-ExtraBold; color:#FEC712;">INTRODUCING<br> THE SMART CLUB</h3>
+						<h3 class='animated' id="sec1_h3" style="line-height: 28px; font-family: RidleyGrotesk-ExtraBold; color:#FEC712;">INTRODUCING<br> THE SMART CLUB</h3>
 						
-						<span style="color:#666;">We tale things to a different level by providing our <br>users with tones of offers right at their fingertips</span>
+						<div class='animated' id='span_below_sec1_h3' >
+							<span style="color:#666;">We tale things to a different level by providing our <br>users with tones of offers right at their fingertips</span>
+						</div>
 						<div class="empTYDib" style="height:25px;"></div>
-						<div class="AppButton">
+						<div class="AppButton " >
 							
-							<a class="newyellow" href="#"><span>GET OUR APP</span> &nbsp; &nbsp; <span> <i class="fa fa-apple" aria-hidden="true"></i></span> &nbsp;<span><i class="fa fa-android" aria-hidden="true"></i></span></a>
+							<div class='' id=''>
+								<a class="newyellow animated" id='btn_below_span_sec1' href="#">
+									<div class='animated' id='elemleft_in_btn_below_span'>
+										<span>GET OUR APP</span> &nbsp; &nbsp; 
+									</div>
+									<div class='animated' id='elemright_in_btn_below_span'>
+										<span> <i class="fa fa-apple" aria-hidden="true"></i></span> &nbsp;
+										<span><i class="fa fa-android" aria-hidden="true"></i></span>
+									</div>
+								</a>
+									
+							</div>
 						</div>
 						<div class="empTYDib2" style="height:45px;"></div>
 						<div class="empTYDib33" style="height:2px; width:120px; background-color:#ddd;">

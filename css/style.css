@@ -18,6 +18,10 @@
 		font-family: "RidleyGrotesk-Light";
 	}
 
+	
+	#img_sec1, #div_beside_img_sec1, #sec1_h3, #span_below_sec1_h3, #btn_below_span_sec1, #elemleft_in_btn_below_span, #elemright_in_btn_below_span{
+		display: none;
+	}
 
 	/* Style for our header texts
 	* --------------------------------------- */
@@ -64,12 +68,14 @@
 
 	a.newyellow {
 		width:200px;
-		height:40px;
+		/* height:40px; */
+		height: 15px;
 		border-radius: 30px;
 		background: #F8CB15;
 		padding: 13px 45px;
 		color:#fff;
-		font-size:12px;
+		font-size:14px;
+		font-weight: bold;
 		text-decoration:none;
 	}
 	a.newPurple {
