@@ -18,7 +18,7 @@
 		font-family: "RidleyGrotesk-Light";
 	}
 
-	#img_sec1, #div_beside_img_sec1, #sec1_h3, #span_below_sec1_h3, #btn_below_span_sec1, #elemleft_in_btn_below_span, #elemright1_in_btn_below_span, #elemright2_in_btn_below_span, #connect_div_whole, #scroll_div, #connect_div_twtic, #connect_div_fbic, #connect_div_igic{
+	#img_sec1, #div_beside_img_sec1, #sec1_h3, #span_below_sec1_h3, #btn_below_span_sec1, #elemleft_in_btn_below_span, #elemright1_in_btn_below_span, #elemright2_in_btn_below_span, #connect_div_whole, #scroll_div, #connect_div_twtic, #connect_div_fbic, #connect_div_igic, #img_sec2, #div_beside_img_sec2, #sec2_h3, #span_below_sec2_h3, #btn_below_span_sec2, #elemleft_in_btn_below_span2, #elemright1_in_btn_below_span2, #elemright2_in_btn_below_span2, #scroll_div2, #connect_div_whole2, #connect_div_twtic2, #connect_div_fbic2, #connect_div_igic2  {
 		display: none;
 	}
 
@@ -79,7 +79,8 @@
 	}
 	a.newPurple {
 		width:200px;
-		height:40px;
+		/* height:40px; */
+		height:15px;
 		border-radius: 30px;
 		background: #432C7C;
 		padding: 13px 45px;
@@ -473,13 +474,21 @@
 		padding-left: 17px;
 		padding-top: 17px;
 	}
-	#connect_div_whole{
+	.btn-round2{
+		background:white; border-radius:50%; width:50px; height:50px;
+	}
+	.icon_btn_round2{
+		color: #FEC712;
+		padding-left: 17px;
+		padding-top: 17px;
+	}
+	#connect_div_whole, #connect_div_whole2{
 		position:relative; top:300px;
 	}
-	#connect_div{
+	#connect_div, #connect_div2{
 		height:100%; width:280px; display:inline-block; margin-left:160px;
 	}
-	#scroll_div{
+	#scroll_div, #scroll_div2{
 		position:relative; bottom:-300px;
 	}
 	
